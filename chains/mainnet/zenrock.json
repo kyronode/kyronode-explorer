@@ -8,7 +8,7 @@
     "coin_type": "0",
     "min_tx_fee": "800",
     "addr_prefix": "zen",
-    "logo": "/logos/zenrock.png",
+    "logo": "/logos/zenrock.svg",
     "assets": [{
         "base": "urock",
         "symbol": "ROCK",
