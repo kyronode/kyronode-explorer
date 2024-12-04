@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
+html, body {
   height: 100%;
 }
 
@@ -18,19 +18,46 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-active); /* Latar belakang terang */
+  color: var(--text-main); /* Teks utama hitam */
 }
 
+/* Variabel warna */
 :root {
-  --text-main: #333;
-  --text-secondary: #4b525d;
-  --bg-active: #fbfbfc;
+  --text-main: #000000; /* Teks utama hitam */
+  --text-secondary: #4b525d; /* Teks sekunder abu-abu */
+  --bg-active: #FFF5E0; /* Latar belakang kekuningan terang */
+  --primary-color: #FFA500; /* Oranye utama */
+  --secondary-color: #FF4500; /* Merah aksen */
+  --highlight-color: #000000; /* Warna hitam untuk detail */
 }
 
+/* Mode gelap */
 html.dark,
 html[data-theme='dark'] {
-  --text-main: #f7f7f7;
-  --text-secondary: #6f6e84;
-  --bg-active: #242b40;
+  --text-main: #f7f7f7; /* Teks putih untuk mode gelap */
+  --text-secondary: #FF4500; /* Merah aksen untuk teks sekunder */
+  --bg-active: #242b40; /* Latar belakang gelap */
+}
+
+header, footer {
+  background-color: var(--primary-color); /* Oranye utama */
+  color: #fff; /* Teks putih */
+  padding: 20px;
+}
+
+button, .btn-primary {
+  background-color: var(--secondary-color); /* Merah aksen */
+  color: #fff; /* Teks putih */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn-primary:hover {
+  background-color: var(--primary-color); /* Oranye utama saat hover */
 }
 
 .table th:first-child {
@@ -51,4 +78,35 @@ html[data-theme='dark'] {
 .slide-up-leave-to {
   opacity: 0;
   transform: translateY(-calc(15%));
+}
+
+/* Styling tambahan untuk elemen khusus */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: var(--primary-color); /* Oranye utama */
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color); /* Merah aksen saat hover */
+}
+
+footer {
+  background-color: var(--primary-color); /* Oranye utama */
+  text-align: center;
+  padding: 10px 0;
 }
