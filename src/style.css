@@ -22,7 +22,7 @@ body {
   color: var(--text-main); /* Teks utama hitam */
 }
 
-/* Variabel warna */
+
 :root {
   --text-main: #000000; /* Teks utama hitam */
   --text-secondary: #4b525d; /* Teks sekunder abu-abu */
@@ -32,7 +32,7 @@ body {
   --highlight-color: #000000; /* Warna hitam untuk detail */
 }
 
-/* Mode gelap */
+
 html.dark,
 html[data-theme='dark'] {
   --text-main: #f7f7f7; /* Teks putih untuk mode gelap */
@@ -80,7 +80,7 @@ button:hover, .btn-primary:hover {
   transform: translateY(-calc(15%));
 }
 
-/* Styling tambahan untuk elemen khusus */
+
 a {
   color: var(--primary-color);
   text-decoration: none;
